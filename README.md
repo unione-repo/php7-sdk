@@ -8,7 +8,7 @@ For more information, please visit [https://cp.unione.io/en/support](https://cp.
 
 ### Requirements
 
-PHP 7.2 and later
+PHP 7.2 and later.
 
 ### Composer
 
