@@ -73,18 +73,18 @@ $apiInstance = new UniOne\Api\EmailApi(
     $config
 );
 
-$bodyObject = new \UniOne\Model\BodyObject();
+$bodyObject = new UniOne\Model\BodyObject();
 $bodyObject
     ->setHtml("<b>Hello, {{to_name}}</b>");
 
-$messageObject = new \UniOne\Model\MessageObject();
+$messageObject = new UniOne\Model\MessageObject();
 $messageObject
     ->setSubject("UniOne test email")
     ->setFromEmail("user@example.com")
     ->setRecipients([{"email":"email@example.com","substitutions":{"to_name":"John Smith"},"metadata":{"campaign_id":"c77f4f4e-3561-49f7-9f07-c35be01b4f43"}}])
     ->setBody($bodyObject);
 
-$emailSendRequest = new \UniOne\Model\EmailSendRequest();
+$emailSendRequest = new UniOne\Model\EmailSendRequest();
 $emailSendRequest
     ->setMessage($messageObject);
 
